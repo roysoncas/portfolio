@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Royson Castelino | Software Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Royson Castelino - Software Developer & MCA Candidate at Poornaprajna Institute of Management. Specialized in Java, Full-Stack Web Development, and Android Systems.">
+  <meta name="keywords" content="Royson Castelino, Software Developer, MCA, Java Developer, Android Developer, Full Stack, Portfolio">
+  <meta name="author" content="Royson Castelino">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Royson Castelino | Software Developer Portfolio">
+  <meta property="og:description" content="Modern Developer Portfolio featuring 3D Algorithmic Geometry Engine, Full-Stack systems, and Android applications.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2308090f'/><polygon points='50,15 85,35 85,75 50,95 15,75 15,35' fill='none' stroke='%2300f2fe' stroke-width='6'/><text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='44' fill='%2300f2fe'>R</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background 3D Sacred Geometry Canvas -->
+  <div id="geometry-canvas-container">
+    <canvas id="geometry-canvas"></canvas>
+  </div>
+  <div class="background-grid-glow"></div>
+
+  <!-- Main Navigation Bar -->
+  <header class="navbar" id="main-navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-link" aria-label="Royson Castelino Home">
+        <div class="brand-avatar-mini">
+          <img src="assets/royson.jpg" alt="Royson" class="brand-avatar-img" onerror="this.style.display='none'; document.getElementById('brand-initials').style.display='block';">
+          <span id="brand-initials" class="brand-initials-fallback" style="display:none;">RC</span>
+        </div>
+        <div class="brand-text-block">
+          <span class="brand-title">Royson Castelino</span>
+          <span class="brand-role">Software Developer</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right-actions">
+        <a href="assets/Royson_Castelino_Resume.pdf" download="Royson_Castelino_Resume.pdf" class="btn-resume" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Resume</span>
+        </a>
+
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle Navigation">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="page-wrapper">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-layout">
+        <div class="hero-left">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Available for Software Engineering Roles</span>
+          </div>
+
+          <h1 class="hero-name">
+            Hi, I'm <span class="gradient-title">Royson Castelino</span>
+          </h1>
+
+          <div class="hero-tagline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+            <span>Software Developer & MCA Student</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate software developer with a strong foundation in Java programming, database architecture, 
+            and modern full-stack web and Android application development. Focused on engineering practical, 
+            scalable, and high-performance software solutions.
+          </p>
+
+          <!-- Contact Quick Chips -->
+          <div class="contact-quick-chips">
+            <span class="quick-chip copy-action" data-copy="roysoncastelino04@gmail.com" title="Click to copy email">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>roysoncastelino04@gmail.com</span>
+            </span>
+            <span class="quick-chip copy-action" data-copy="09980968847" title="Click to copy phone">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 09980968847</span>
+            </span>
+            <span class="quick-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Udupi, Karnataka, India</span>
+            </span>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              <span>View Projects</span>
+            </a>
+            <a href="assets/Royson_Castelino_Resume.pdf" download="Royson_Castelino_Resume.pdf" class="btn-secondary" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download Resume</span>
+            </a>
+            <a href="https://linkedin.com/in/royson-castelino" target="_blank" rel="noopener" class="btn-secondary" title="Connect on LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right: Minimalist Identity Card -->
+        <div class="hero-right">
+          <div class="identity-card tilt-element">
+            <div class="avatar-photo-wrap">
+              <img src="assets/royson.jpg" alt="Royson Castelino" class="avatar-photo" onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';">
+              <div id="avatar-fallback" class="avatar-fallback-initials" style="display: none;">RC</div>
+            </div>
+
+            <h3 class="id-name">Royson Castelino</h3>
+            <span class="id-role">SOFTWARE DEVELOPER</span>
+            <p class="id-inst">Poornaprajna Institute of Management (2025–2027)</p>
+
+            <div class="id-tag-list">
+              <span class="id-tag">Java & OOP</span>
+              <span class="id-tag">Android Studio</span>
+              <span class="id-tag">Full-Stack Web</span>
+              <span class="id-tag">Cloud & MySQL</span>
+              <span class="id-tag">Firebase & Firestore</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">Summary & Background</span>
+          <h2 class="section-title">Committed to Engineering Excellence</h2>
+          <p class="section-subtitle">Dedicated to mastering computer science foundations and deploying real-world software applications.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <p>
+              I am a motivated MCA student at <strong>Poornaprajna Institute of Management</strong>, Udupi, with a strong foundation 
+              in computer applications, object-oriented Java programming, database design, and modern web and mobile architectures.
+            </p>
+            <p>
+              I love learning emerging technologies, solving algorithmic challenges, and engineering reliable software systems 
+              from concept to deployment. Eager to contribute technical proficiency, collaborate with innovative teams, 
+              and build scalable solutions that make a tangible difference.
+            </p>
+
+            <div class="about-highlights">
+              <div class="hl-box">
+                <div class="hl-icon">☕</div>
+                <div class="hl-info">
+                  <h5>Java Programming</h5>
+                  <p>Object-oriented software development & structured design.</p>
+                </div>
+              </div>
+              <div class="hl-box">
+                <div class="hl-icon">📱</div>
+                <div class="hl-info">
+                  <h5>Android Engineering</h5>
+                  <p>Native mobile apps with Java, XML & Firebase services.</p>
+                </div>
+              </div>
+              <div class="hl-box">
+                <div class="hl-icon">🌐</div>
+                <div class="hl-info">
+                  <h5>Web & APIs</h5>
+                  <p>Full-stack web apps, PHP, MySQL, REST API integrations.</p>
+                </div>
+              </div>
+              <div class="hl-box">
+                <div class="hl-icon">🗣️</div>
+                <div class="hl-info">
+                  <h5>Multilingual</h5>
+                  <p>Fluent in English, Hindi, Kannada, and Konkani.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats-card">
+            <div class="stat-item">
+              <div class="stat-num">MCA</div>
+              <div class="stat-meta">
+                <h4>Master of Computer Application</h4>
+                <span>Poornaprajna Institute of Management (2025–2027)</span>
+              </div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-num">2+</div>
+              <div class="stat-meta">
+                <h4>Engineered Applications</h4>
+                <span>E-Pharmacy Web Platform & QuickDoc Android System</span>
+              </div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-num">2x</div>
+              <div class="stat-meta">
+                <h4>Professional Certifications</h4>
+                <span>Cloud Computing (NPTEL) & Web Development (Udemy)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX SECTION -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">Technical Arsenal</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">Proficiencies acquired through academic coursework, independent engineering, and certified training.</p>
+        </div>
+
+        <div class="skill-filter-bar">
+          <button class="skill-filter-btn active" data-cat="all">All Skills</button>
+          <button class="skill-filter-btn" data-cat="languages">Programming</button>
+          <button class="skill-filter-btn" data-cat="web">Web Development</button>
+          <button class="skill-filter-btn" data-cat="android">Android Development</button>
+          <button class="skill-filter-btn" data-cat="database">Databases & Cloud</button>
+          <button class="skill-filter-btn" data-cat="tools">Tools & Soft Skills</button>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-card" data-cat="languages">
+            <div class="skill-card-top">
+              <div class="sc-icon">💻</div>
+              <div class="sc-title">
+                <h4>Programming Languages</h4>
+                <span>Core Languages</span>
+              </div>
+            </div>
+            <div class="skill-tag-cloud">
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">PHP</span>
+              <span class="skill-pill">JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-card" data-cat="web">
+            <div class="skill-card-top">
+              <div class="sc-icon">🌐</div>
+              <div class="sc-title">
+                <h4>Web Development</h4>
+                <span>Frontend & Backend</span>
+              </div>
+            </div>
+            <div class="skill-tag-cloud">
+              <span class="skill-pill">HTML5</span>
+              <span class="skill-pill">CSS3</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">API Integration</span>
+              <span class="skill-pill">Bootstrap</span>
+            </div>
+          </div>
+
+          <!-- Android Development -->
+          <div class="skill-card" data-cat="android">
+            <div class="skill-card-top">
+              <div class="sc-icon">📱</div>
+              <div class="sc-title">
+                <h4>Android Development</h4>
+                <span>Native Mobile Stack</span>
+              </div>
+            </div>
+            <div class="skill-tag-cloud">
+              <span class="skill-pill">Android Studio</span>
+              <span class="skill-pill">Java (Android)</span>
+              <span class="skill-pill">Kotlin</span>
+              <span class="skill-pill">XML Layouts</span>
+              <span class="skill-pill">Firebase SDK</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-card" data-cat="database">
+            <div class="skill-card-top">
+              <div class="sc-icon">🗄️</div>
+              <div class="sc-title">
+                <h4>Database Management</h4>
+                <span>Relational & NoSQL</span>
+              </div>
+            </div>
+            <div class="skill-tag-cloud">
+              <span class="skill-pill">MySQL</span>
+              <span class="skill-pill">MongoDB</span>
+              <span class="skill-pill">Cloud Firestore</span>
+              <span class="skill-pill">SQLite</span>
+              <span class="skill-pill">Firebase Realtime</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card" data-cat="tools">
+            <div class="skill-card-top">
+              <div class="sc-icon">🛠️</div>
+              <div class="sc-title">
+                <h4>Developer Tools</h4>
+                <span>Environment & DevOps</span>
+              </div>
+            </div>
+            <div class="skill-tag-cloud">
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">GitHub</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Android Studio</span>
+              <span class="skill-pill">XAMPP / Apache</span>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-card" data-cat="tools">
+            <div class="skill-card-top">
+              <div class="sc-icon">🤝</div>
+              <div class="sc-title">
+                <h4>Soft Skills & Languages</h4>
+                <span>Team & Linguistics</span>
+              </div>
+            </div>
+            <div class="skill-tag-cloud">
+              <span class="skill-pill">Problem-Solving</span>
+              <span class="skill-pill">Teamwork</span>
+              <span class="skill-pill">Communication</span>
+              <span class="skill-pill">Quick Learning</span>
+              <span class="skill-pill">English, Hindi, Kannada, Konkani</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">Practical Implementations</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications engineered with secure database backends, authentication, and responsive interfaces.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: E-Pharmacy -->
+          <div class="project-card tilt-element">
+            <div>
+              <div class="p-header">
+                <span class="p-badge">Academic Project</span>
+                <span class="p-period">01/2025 – 02/2025</span>
+              </div>
+
+              <h3 class="p-title">E-Pharmacy</h3>
+              <div class="p-sub">Online Medicine Ordering & Inventory System</div>
+
+              <p class="p-desc">
+                Developed an online web platform for searching, ordering, and managing pharmaceuticals. 
+                Features authenticated user portals, prescription upload pipelines, and inventory tracking.
+              </p>
+
+              <ul class="p-bullets">
+                <li><span class="p-bullet-icon">▹</span> <span>Implemented user login, medicine search, cart, and prescription upload.</span></li>
+                <li><span class="p-bullet-icon">▹</span> <span>Managed medicine inventory, orders, and payments using PHP and MySQL.</span></li>
+                <li><span class="p-bullet-icon">▹</span> <span>Integrated prescription verification, Cash on Delivery (COD), and delivery tracking.</span></li>
+              </ul>
+
+              <div class="p-tech-tags">
+                <span class="p-tag">PHP</span>
+                <span class="p-tag">MySQL</span>
+                <span class="p-tag">HTML5 / CSS3</span>
+                <span class="p-tag">JavaScript</span>
+                <span class="p-tag">Bootstrap</span>
+                <span class="p-tag">XAMPP</span>
+                <span class="p-tag">Apache</span>
+              </div>
+            </div>
+
+            <button class="btn-open-modal open-project-modal" data-project="epharmacy">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              <span>View Architecture & Details</span>
+            </button>
+          </div>
+
+          <!-- Project 2: QuickDoc -->
+          <div class="project-card tilt-element">
+            <div>
+              <div class="p-header">
+                <span class="p-badge">Team Project</span>
+                <span class="p-period">Mobile Engineering</span>
+              </div>
+
+              <h3 class="p-title">QuickDoc</h3>
+              <div class="p-sub">Doctor Appointment Booking System (Android)</div>
+
+              <p class="p-desc">
+                Engineered a native Android application designed to streamline doctor discovery and online appointment booking. 
+                Utilizes Firebase services for real-time data sync and cloud alerts.
+              </p>
+
+              <ul class="p-bullets">
+                <li><span class="p-bullet-icon">▹</span> <span>Implemented patient registration, login, doctor search, and appointment booking.</span></li>
+                <li><span class="p-bullet-icon">▹</span> <span>Integrated Firebase Authentication and Firestore for secure user and appointment management.</span></li>
+                <li><span class="p-bullet-icon">▹</span> <span>Implemented appointment status updates, Cloud Storage, and FCM push notifications.</span></li>
+              </ul>
+
+              <div class="p-tech-tags">
+                <span class="p-tag">Android Studio</span>
+                <span class="p-tag">Java</span>
+                <span class="p-tag">XML Layouts</span>
+                <span class="p-tag">Firebase Auth</span>
+                <span class="p-tag">Cloud Firestore</span>
+                <span class="p-tag">Firebase Storage</span>
+                <span class="p-tag">FCM Push Alerts</span>
+              </div>
+            </div>
+
+            <button class="btn-open-modal open-project-modal" data-project="quickdoc">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              <span>View Architecture & Details</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS SECTION -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">Academic & Verified Training</span>
+          <h2 class="section-title">Education & Certifications</h2>
+          <p class="section-subtitle">Academic foundations and verified industry certifications.</p>
+        </div>
+
+        <div class="edu-cert-columns">
+          <!-- Education Column -->
+          <div class="column-block">
+            <h3>🎓 Formal Education</h3>
+            <div class="timeline">
+              <div class="timeline-entry">
+                <div class="timeline-content">
+                  <div class="t-date">10/2025 – 10/2027 | Udupi, Karnataka</div>
+                  <h4 class="t-heading">Master Of Computer Application (MCA)</h4>
+                  <div class="t-inst">Poornaprajna Institute of Management</div>
+                  <p class="t-desc">
+                    Comprehensive postgraduate program emphasizing advanced computer applications, Java programming, 
+                    database engineering, software development life cycle (SDLC), and cloud architectures.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications Column -->
+          <div class="column-block">
+            <h3>📜 Verified Certifications</h3>
+            <div class="timeline">
+              <div class="timeline-entry">
+                <div class="timeline-content">
+                  <div class="t-date">SWAYAM / NPTEL Online Certification</div>
+                  <h4 class="t-heading">Cloud Computing</h4>
+                  <div class="t-inst">Issued by: <strong>NPTEL</strong></div>
+                  <p class="t-desc">
+                    In-depth curriculum covering cloud architectural models, virtualization, distributed systems, 
+                    storage concepts, and cloud service management.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-entry">
+                <div class="timeline-content">
+                  <div class="t-date">Online Certification</div>
+                  <h4 class="t-heading">Web Development Course</h4>
+                  <div class="t-inst">Issued by: <strong>Udemy</strong></div>
+                  <p class="t-desc">
+                    Practical full-stack web development program covering frontend semantics, responsive styling, 
+                    JavaScript DOM manipulation, and dynamic API integrations.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Open for full-time software developer opportunities, internships, and engineering collaborations.</p>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-left">
+            <h3>Contact Information</h3>
+            <p>
+              I am actively seeking software engineering roles where I can apply my Java, Full-Stack, and Android expertise. 
+              Reach out directly or send a message below.
+            </p>
+
+            <div class="contact-methods">
+              <div class="method-box">
+                <div class="method-info">
+                  <span class="method-label">Email</span>
+                  <a href="mailto:roysoncastelino04@gmail.com" class="method-val">roysoncastelino04@gmail.com</a>
+                </div>
+                <button class="btn-copy-chip copy-action" data-copy="roysoncastelino04@gmail.com" title="Copy Email">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+
+              <div class="method-box">
+                <div class="method-info">
+                  <span class="method-label">Phone & WhatsApp</span>
+                  <a href="tel:+919980968847" class="method-val">+91 09980968847</a>
+                </div>
+                <button class="btn-copy-chip copy-action" data-copy="09980968847" title="Copy Phone">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+
+              <div class="method-box">
+                <div class="method-info">
+                  <span class="method-label">Location</span>
+                  <span class="method-val">Udupi, Karnataka, India</span>
+                </div>
+                <button class="btn-copy-chip copy-action" data-copy="Udupi, Karnataka, India" title="Copy Location">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+
+              <div class="method-box">
+                <div class="method-info">
+                  <span class="method-label">LinkedIn</span>
+                  <a href="https://linkedin.com/in/royson-castelino" target="_blank" rel="noopener" class="method-val">linkedin.com/in/royson-castelino</a>
+                </div>
+                <a href="https://linkedin.com/in/royson-castelino" target="_blank" rel="noopener" class="btn-copy-chip" title="Visit Profile">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <form id="contact-form">
+              <div class="form-field">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" class="form-ctrl" placeholder="Alex Henderson" required>
+              </div>
+
+              <div class="form-field">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" class="form-ctrl" placeholder="alex@company.com" required>
+              </div>
+
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" class="form-ctrl" placeholder="Hello Royson, I came across your portfolio and would like to connect regarding..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <span>Send Direct Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <strong>Royson Castelino</strong>
+          <span>Software Developer • MCA Graduate • Crafted with Algorithmic 3D Geometry</span>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://linkedin.com/in/royson-castelino" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+          <a href="mailto:roysoncastelino04@gmail.com" class="footer-link">Email</a>
+          <a href="assets/Royson_Castelino_Resume.pdf" download class="footer-link">Resume PDF</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-icon" id="modal-close" aria-label="Close dialog">&times;</button>
+      <div id="modal-content-area"></div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION BOX -->
+  <div class="toast-box" id="toast-notification"></div>
+
+  <!-- Zero-dependency Modern Geometry Engine & UX Scripts -->
+  <script src="js/geometry.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
